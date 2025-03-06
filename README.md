@@ -1,6 +1,6 @@
-# Terraform Cost Monitoring
+# Terraform for Cloud Cost Monitoring
 
-This project provides a comprehensive solution for monitoring cost anomalies across multiple cloud providers: AWS, Azure, and Google Cloud Platform (GCP). It utilizes Terraform to set up the necessary resources and configurations for effective cost monitoring.
+This project provides a comprehensive solution for monitoring cost anomalies across multiple cloud providers: Amazon Web Services (AWS), Azure, and Google Cloud Platform (GCP). It utilizes Terraform to set up the necessary resources and configurations for effective cost monitoring and alerting.
 
 ## Project Structure
 
