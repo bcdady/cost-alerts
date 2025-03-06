@@ -8,18 +8,28 @@ The project is organized into the following directories:
 
 - **aws/**: Contains Terraform configurations specific to AWS cost anomaly monitoring.
   - `main.tf`: AWS cost monitoring resources.
+
+  - `example.auto.tfvars`: Example input variables for AWS module.
   - `variables.tf`: Input variables for AWS setup.
   - `outputs.tf`: Outputs from AWS resources.
+  - `providers.tf`: configures AWS Terraform provider
+  - `versions.tf`: specifies the Terraform version and required providers
 
 - **azure/**: Contains Terraform configurations specific to Azure cost anomaly monitoring.
   - `main.tf`: Azure cost monitoring resources.
+  - `example.auto.tfvars`: Example input variables for Azure module.
   - `variables.tf`: Input variables for Azure setup.
   - `outputs.tf`: Outputs from Azure resources.
+  - `providers.tf`: configures Azure Terraform provider
+  - `versions.tf`: specifies the Terraform version and required providers
 
 - **gcp/**: Contains Terraform configurations specific to GCP cost anomaly monitoring.
   - `main.tf`: GCP cost monitoring resources.
+  - `example.auto.tfvars`: Example input variables for GCP module.
   - `variables.tf`: Input variables for GCP setup.
   - `outputs.tf`: Outputs from GCP resources.
+  - `providers.tf`: configures Google Cloud Terraform provider
+  - `versions.tf`: specifies the Terraform version and required providers
 
 - **modules/**: Contains reusable modules for cost monitoring across different cloud providers.
   - **aws-cost-monitoring/**: AWS cost monitoring module.
@@ -38,9 +48,13 @@ The project is organized into the following directories:
 ## Setup Instructions
 
 1. **Prerequisites**: Ensure you have Terraform installed on your machine. You will also need access credentials for AWS, Azure, and GCP.
+   1. AWS CLI: [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+   2. Azure 'az' CLI: [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+   3. GCP 'gcloud' CLI`: [Install GCP SDK](https://cloud.google.com/sdk/docs/install)
+   4. Terraform: [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 2. **Configure Variables**
-   1. Update the `.env` file to specify your secrets for each cloud provider's  configurations and credentials.
+
    2. Update the `variables.tf` files in the `aws/`, `azure/`, and `gcp/` directories to specify your variables such as customizing thresholds and specifying notification email addresses.
 
 3. **Initialize Terraform**: Navigate to the root of the project and run:
