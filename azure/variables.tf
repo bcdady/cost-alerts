@@ -1,4 +1,4 @@
 variable "alert_email_address" {
-  description = "email address to receive cost anomaly alerts."
+  description = "Email address to receive cost anomaly notifications."
   type        = string
 }
