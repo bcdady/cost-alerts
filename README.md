@@ -51,11 +51,11 @@ The project is organized into the following directories:
    1. AWS CLI: [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
    2. Azure 'az' CLI: [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
    3. GCP 'gcloud' CLI`: [Install GCP SDK](https://cloud.google.com/sdk/docs/install)
-   4. Terraform: [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+   4. Terraform: [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) or OpenToFu[Install OpenToFu](https://opentofu.org/docs/intro/install/)
 
 2. **Configure Variables**
 
-   2. Update the `variables.tf` files in the `aws/`, `azure/`, and `gcp/` directories to specify your variables such as customizing thresholds and specifying notification email addresses.
+   1. Update the variables in `tfvars` files in the `aws/`, `azure/`, and `gcp/` directories to specify your variables such as customizing thresholds and specifying notification email addresses.
 
 3. **Initialize Terraform**: Navigate to the root of the project and run:
 
